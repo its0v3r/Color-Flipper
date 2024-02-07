@@ -111,6 +111,7 @@ button {
 
 .color {
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .btn {
@@ -144,4 +145,22 @@ button {
 .bright-btn {
     color: var(--white);
     border: 1px solid var(--white);
+}
+
+.message {
+    position: absolute;
+    top: 6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--black);
+    color: var(--white);
+    padding: 1rem 2rem;
+    letter-spacing: 0.1rem;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    opacity: 0;
+}
+
+.show {
+    opacity: 1 !important;
 }

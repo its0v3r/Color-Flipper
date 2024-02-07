@@ -101,10 +101,26 @@ function isBackgroundTooDarkOrBright() {
     }
 }
 
+/* copyColorToClipboard - Copy the text from the color to the clipboard */
+const copyColorToClipboard = async () => {
+    try {
+        await navigator.clipboard.writeText(color_text.textContent);
+        clipboard_message.classList.add("show");
+        const color_text_content = color_text.textContent.toLocaleUpperCase();
+        clipboard_message.textContent = `Copied ${color_text_content} to clipboard ✅`;
+        setTimeout(() => {
+            clipboard_message.classList.remove("show");
+        }, 3000);
+    } catch (err) {
+        console.error(`Error: ${err}`);
+    }
+};
+
 /* General Variables */
 const btn = document.querySelector(".btn");
 const color_text = document.querySelector(".color");
 const main = document.querySelector("main");
+const clipboard_message = document.querySelector(".message");
 const simple_page_title = "Color Flipper - Simple Colors";
 const hex_page_title = "Color Flipper - Hex Colors";
 let json_data = [];
@@ -121,4 +137,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     } catch (err) {
         console.error(`Error: ${err}`);
     }
+});
+
+color_text.addEventListener("click", async function () {
+    copyColorToClipboard();
 });
