@@ -1,0 +1,147 @@
+/* GLOBAL */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Montserrat&display=swap");
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    /* colors */
+    --white: #e2e0ff;
+    --black: #1f1e21;
+    --primary-400: #6595dd;
+
+    /* sizes */
+    --fixed-width: 75%;
+    --letter-spacing: 0.15rem;
+    --border-radius: 0.25rem;
+
+    /* misc */
+    --transition: 0.15s ease-in-out all;
+}
+
+h2 {
+    font-size: 2.441rem;
+}
+
+h4 {
+    font-size: 1.563rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+}
+
+/* NAV */
+.nav {
+    background: var(--black);
+    height: 4rem;
+    display: grid;
+    place-items: center;
+    border-bottom: 2px solid var(--white);
+}
+
+.nav a {
+    text-transform: capitalize;
+    font-size: 1rem;
+    color: var(--white);
+    letter-spacing: var(--letter-spacing);
+    transition: var(--transition);
+}
+
+.nav a:hover {
+    color: var(--primary-400);
+}
+
+.nav-center {
+    width: 90vw;
+    max-width: var(--fixed-width);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-center h4 {
+    color: var(--white);
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.nav-links {
+    display: flex;
+    gap: 0 1rem;
+}
+
+.title {
+    text-transform: uppercase;
+}
+
+/* MAIN */
+.main {
+    height: calc(100vh - 4rem);
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.container h2 {
+    text-transform: capitalize;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 1rem 2rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 2.5rem;
+    letter-spacing: var(--letter-spacing);
+    font-weight: 600;
+}
+
+.color {
+    text-transform: uppercase;
+}
+
+.btn {
+    text-align: center;
+    padding: 0.75rem 2rem;
+    border-radius: var(--border-radius);
+    background-color: transparent;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing);
+    transition: var(--transition);
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.btn.bright-btn:hover {
+    color: var(--black);
+    background-color: var(--white);
+}
+
+.btn.dark-btn:hover {
+    color: var(--white);
+    background-color: var(--black);
+}
+
+.dark-btn {
+    color: var(--black);
+    border: 1px solid var(--black);
+}
+
+.bright-btn {
+    color: var(--white);
+    border: 1px solid var(--white);
+}
