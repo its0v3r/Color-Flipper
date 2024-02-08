@@ -11,5 +11,5 @@ This project is heavily based on John Smilga's Color Flipper project on his HTML
 
 -   Fetch data from a local JSON (to simulate an API request);
 -   Change the background color randomly using hardcoded CSS colors or random hex colors;
--   Check for the background brightness to set the button color to black or white (to be visible)
--   Copy the color text to the clipboard by clicking on the color text
+-   Check for the background brightness to set the button color to black or white (to be visible);
+-   Copy the color text to the clipboard by clicking on the color text.
