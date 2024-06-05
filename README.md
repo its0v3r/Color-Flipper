@@ -15,4 +15,4 @@ This project is heavily based on John Smilga's Color Flipper project on his HTML
 -   Copy the color text to the clipboard by clicking on the color text.
 
 # Project demo
-[Click here](https://its0v3r-js-project-color-flipper.netlify.app/html/index.html) to check a demo of this project!
+[Click here](https://its0v3r-js-project-color-flipper.netlify.app/html/index.html){target="_blank"} to check a demo of this project!
